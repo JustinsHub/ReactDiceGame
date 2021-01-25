@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import OneDie from './OneDie'
 import '../Dice.css'
 
 const Dice = ({numDice = 6, maxVal = 10}) =>{
@@ -10,7 +11,7 @@ const Dice = ({numDice = 6, maxVal = 10}) =>{
     }
     return (
     <div className="Dice">
-        {rolls.map(roll => <div className="Dice-roll">{roll}</div>)}
+        {rolls.map(roll => <OneDie num={roll}/>)}
         <button onClick={rollDice}>Roll!</button>
     </div>
     )
