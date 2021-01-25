@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dice name="Dexter"/>
+      <Dice numDice={4} maxVal={20}/>
     </div>
   );
 }
